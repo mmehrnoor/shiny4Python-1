@@ -1,10 +1,18 @@
-# shiny4Python in 1 Minute
+# shiny4Python
 Create a shiny for Python app.  You can create both a `site` or full app based on `FastAPI`.
+
+In these lines we:
+- Install `shiny` & `shinylive`
+- Create a Hello world app
+- Run the [app](https://shiny.rstudio.com/py/docs/deploy.html) based on the `FastAPI`
+- Create as a [static website](https://shiny.rstudio.com/py/docs/shinylive.html) with `WebAssembly`
 
 ```
 pip install shiny
 pip install shinylive
-shiny create shiny4Python
-shiny run shiny4Python
-shiny export shiny4Python
+shiny create .
+shiny run 
+shinylive export . docs
 ```
+
+`Note:` We output the website to `docs` to host on a Github Page
