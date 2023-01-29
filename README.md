@@ -1,8 +1,6 @@
 # shiny4Python
 Create a shiny for Python app.  You can create both a `site` or full app based on `FastAPI`.
 
-![image](https://user-images.githubusercontent.com/33904170/215349262-68b36efa-ceff-40ea-ae80-052303a7258b.png)
-
 In these lines we:
 - Install `shiny` & `shinylive`
 - Create a Hello world app
@@ -18,3 +16,6 @@ shinylive export . docs
 ```
 
 `Note:` We output the website to `docs` to host on a Github Page
+
+
+![image](https://user-images.githubusercontent.com/33904170/215349262-68b36efa-ceff-40ea-ae80-052303a7258b.png)
