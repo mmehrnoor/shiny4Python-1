@@ -1,7 +1,8 @@
 from shiny import App, render, ui
+def square(n):
+    return n * n
 
 app_ui = ui.page_fluid(
-    ui.h2("Hello my name is MAtt!"),
     ui.input_slider("n", "N", 0, 100, 20),
     ui.output_text_verbatim("txt"),
 )
@@ -11,7 +12,8 @@ def server(input, output, session):
     @output
     @render.text
     def txt():
-        return f"n*2 is {input.n() * 2}"
+        val = square(input.n())
+        return f"{input.n()} squared is {val}"
 
 
-app = App(app_ui, server)
+app = App(app_ui, server, debug=True)
